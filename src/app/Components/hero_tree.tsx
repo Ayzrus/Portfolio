@@ -25,7 +25,7 @@ const Hero_Tree = () => {
         return response.json();
       })
       .then((data: Repo[]) => {
-        const filteredRepos = data.filter(repo => repo.name !== 'Ayzrus');
+        const filteredRepos = data.filter(repo => repo.name !== 'Ayzrus' && repo.name !== "Portfolio");
         setRepos(filteredRepos);
       })
       .catch(error => console.error('Erro ao buscar repositórios:', error));
