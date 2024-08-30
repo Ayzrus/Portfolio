@@ -1,0 +1,33 @@
+{
+  "hero_one": {
+    "title": "Rodrigo Carvalho",
+    "description": "I am an enterprise application developer with 20 years old, specialized in backend development. I started my programming journey 7 years ago and, over the last 3 years, honed my skills in the Programmer course at the Instituto do Emprego e Formação Profissional de Évora."
+  },
+  "hero_two": {
+    "title": "About Me",
+    "subtitle": "Software Developer",
+    "description": "Hello, my name is Rodrigo Carvalho, and I am a business application developer. I am 20 years old, passionate about technology and innovation. With 7 years of programming experience, I specialize in backend development, creating efficient and scalable solutions for businesses. For 3 years, I studied at IEFP Évora, where I deepened my knowledge and prepared myself to tackle complex challenges in the tech world. My journey in software development is driven by a constant desire to learn and evolve. I am always seeking new knowledge and innovative ways to apply best practices in business application development. If you’re looking for someone dedicated and skilled to turn ideas into technological solutions, I’m ready to help."
+  },
+  "hero_tree": {
+    "projectsTitle": "My Projects"
+  },
+  "hero_four": {
+    "Title": "Experience",
+    "parsisplan": "I interned at Parsisplan for over 1 year through the IEFP in Évora. I had an amazing experience at the company; I was warmly welcomed and always received all the necessary support. Today, much of what I know is thanks to the people at the company. I worked on some projects that I can't discuss due to company confidentiality, but it was an incredible experience and I am grateful for the opportunity.",
+    "novabit": "This company is focused on hardware and network systems. I interned there for about 2 months and learned some things, such as NAS systems and RAID configurations. Although it was not one of my best experiences due to some internal issues, I was able to gain some knowledge."
+  },
+  "hero_five": {
+    "Title": "Contacts",
+    "Title2": "Social Networks",
+    "contactTitle": "Would you like to get in touch?",
+    "copy": "Copy",
+    "copied": "Copied"
+  },
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "experience": "Experience",
+    "contacts": "Contacts"
+  }
+}
