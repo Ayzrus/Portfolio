@@ -15,14 +15,6 @@ const Hero_One = () => {
 
         {/* Texto */}
         <div className="mr-auto place-self-center lg:col-span-7">
-          <motion.h1
-            className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white"
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-          >
-            {translations.hero_one?.title}
-          </motion.h1>
           <motion.p
             className="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400"
             initial={{ opacity: 0, y: 50 }}
