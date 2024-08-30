@@ -115,7 +115,7 @@ const Navbar = () => {
 
 
         {/* Menu Móvel */}
-        <motion.div
+        {/* <motion.div
           className="fixed top-16 left-0 w-full bg-gray-50 dark:bg-zinc-800 border-t border-gray-200 dark:border-gray-700 md:hidden"
           id="mobile-menu"
           initial={{ opacity: 0, height: 0 }}
@@ -150,7 +150,45 @@ const Navbar = () => {
               <LanguageDropdownButton />
             </li>
           </ul>
+        </motion.div> */}
+
+        {/* Menu Móvel */}
+        <motion.div
+          className={`fixed top-16 left-0 w-full bg-gray-50 dark:bg-zinc-800 border-t border-gray-200 dark:border-gray-700 md:hidden transition-transform transform ${isOpen ? 'translate-y-0 block' : '-translate-y-full hidden'}`}
+          id="mobile-menu"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: isOpen ? 1 : 0 }}
+          transition={{ duration: 0.3, ease: "easeOut" }}
+        >
+          <ul className="flex flex-col p-4 font-medium">
+            {navItems.map((item) => (
+              <motion.li
+                key={item}
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.95 }}
+                transition={{ duration: 0.3 }}
+              >
+                <a
+                  href={`#${item}`}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleClick(item);
+                  }}
+                  className={`block py-2 px-3 rounded ${activeItem === item
+                    ? 'text-[#28CB8B]'
+                    : 'text-gray-900 dark:text-white dark:hover:text-[#28CB8B]'
+                    }`}
+                >
+                  {(translations.navbar[item as keyof typeof translations.navbar]) || item.charAt(0).toUpperCase() + item.slice(1)}
+                </a>
+              </motion.li>
+            ))}
+            <li>
+              <LanguageDropdownButton />
+            </li>
+          </ul>
         </motion.div>
+
       </div>
     </motion.nav>
   );
